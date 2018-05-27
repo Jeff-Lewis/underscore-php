@@ -11,9 +11,9 @@
 
 namespace Underscore;
 
-use PHPUnit_Framework_TestCase;
+use \PHPUnit\Framework\TestCase;
 
-abstract class UnderscoreTestCase extends PHPUnit_Framework_TestCase
+abstract class UnderscoreTestCase extends TestCase
 {
     public $array = ['foo' => 'bar', 'bis' => 'ter'];
     public $arrayNumbers = [1, 2, 3];

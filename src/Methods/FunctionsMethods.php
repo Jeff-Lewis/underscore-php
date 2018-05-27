@@ -11,6 +11,8 @@
 
 namespace Underscore\Methods;
 
+use Closure;
+
 /**
  * Methods to manage functions.
  */
@@ -57,7 +59,7 @@ class FunctionsMethods
      * Create a function that can only be called $times times.
      *
      * @param callable $function
-     * @param int      $times    The number of times
+     * @param int $canBeCalledTimes The number of times
      *
      * @return Closure
      */

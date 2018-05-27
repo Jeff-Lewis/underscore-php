@@ -1,5 +1,5 @@
 {
-  "name": "anahkiasen/underscore-php",
+  "name": "jeff-lewis/underscore-php",
   "description": "A redacted port of Underscore.js for PHP",
   "license": "MIT",
   "keywords": [
@@ -9,18 +9,19 @@
   ],
   "authors": [
     {
-      "name": "Maxime Fabre",
-      "email": "ehtnam6@gmail.com"
+      "name": "Jeff Lewis",
+      "email": "jlewis@streetconnect.com"
     }
   ],
   "require": {
-    "php": ">=5.4.0",
-    "doctrine/inflector": "^1.0",
-    "patchwork/utf8": "^1.2"
+    "php": ">=7.2.0",
+    "doctrine/inflector": "^1.3.0",
+    "patchwork/utf8": "^1.3.1"
   },
   "require-dev": {
-    "fabpot/php-cs-fixer": "^1.10",
-    "phpunit/phpunit": "^4.8"
+    "friendsofphp/php-cs-fixer": "^2.11.1",
+    "phar-io/manifest": "dev-master",
+    "phpunit/phpunit": "^7.1.5"
   },
   "autoload": {
     "psr-4": {

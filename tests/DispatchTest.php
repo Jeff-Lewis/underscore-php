@@ -49,7 +49,7 @@ class DispatchTest extends UnderscoreTestCase
 
     public function testCanThrowExceptionAtUnknownTypes()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException('InvalidArgumentException');
 
         $file = fopen('../.travis.yml', 'w+');
         $dispatch = Dispatch::toClass($file);

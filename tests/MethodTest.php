@@ -18,7 +18,7 @@ class MethodTest extends UnderscoreTestCase
 {
     public function testThrowsErrorIfIncorrectMethod()
     {
-        $this->setExpectedException('BadMethodCallException');
+        $this->expectException('BadMethodCallException');
 
         Underscore::invalid('foo');
     }
@@ -67,7 +67,7 @@ class MethodTest extends UnderscoreTestCase
 
     public function testCanThrowExceptionAtUnknownMethods()
     {
-        $this->setExpectedException('BadMethodCallException',
+        $this->expectException('BadMethodCallException',
             'The method Underscore\Types\Arrays::fuck does not exist');
 
         $test = Arrays::fuck($this);

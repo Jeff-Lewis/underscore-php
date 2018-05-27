@@ -147,9 +147,11 @@ abstract class CollectionMethods
     /**
      * Filters an array of objects (or a numeric array of associative arrays) based on the value of a particular property within that.
      *
+     * @param $collection
      * @param string $property
      * @param string $value
      * @param string $comparisonOp
+     * @return array|object
      */
     public static function filterBy($collection, $property, $value, $comparisonOp = null)
     {
@@ -251,6 +253,10 @@ abstract class CollectionMethods
     /**
      * Sort a collection by value, by a closure or by a property
      * If the sorter is null, the collection is sorted naturally.
+     * @param $collection
+     * @param null $sorter
+     * @param string $direction
+     * @return array
      */
     public static function sort($collection, $sorter = null, $direction = 'asc')
     {
@@ -276,6 +282,10 @@ abstract class CollectionMethods
 
     /**
      * Group values from a collection according to the results of a closure.
+     * @param $collection
+     * @param $grouper
+     * @param bool $saveKeys
+     * @return array
      */
     public static function group($collection, $grouper, $saveKeys = false)
     {
@@ -306,6 +316,10 @@ abstract class CollectionMethods
 
     /**
      * Internal mechanic of set method.
+     * @param $collection
+     * @param $key
+     * @param $value
+     * @return mixed
      */
     protected static function internalSet(&$collection, $key, $value)
     {
@@ -342,6 +356,9 @@ abstract class CollectionMethods
 
     /**
      * Internal mechanics of remove method.
+     * @param $collection
+     * @param $key
+     * @return bool
      */
     protected static function internalRemove(&$collection, $key)
     {

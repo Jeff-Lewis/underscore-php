@@ -64,7 +64,7 @@ abstract class Repository
             $this->$typecaster();
         }
 
-        return $this;
+        //return $this;
     }
 
     /**
@@ -123,6 +123,7 @@ abstract class Repository
      * Replace the Subject while maintaining chain.
      *
      * @param mixed $value
+     * @return Repository
      */
     public function setSubject($value)
     {
@@ -251,13 +252,14 @@ abstract class Repository
     /**
      * Simpler version of call_user_func_array (for performances).
      *
-     * @param string $class      The class
-     * @param string $method     The method
-     * @param array  $parameters The arguments
+     * @param string $class The class
+     * @param string $method The method
+     * @param array $parameters The arguments
+     * @return mixed
      */
     protected static function callMethod($class, $method, $parameters)
     {
-        switch (count($parameters)) {
+        switch (\count($parameters)) {
             case 0:
                 return $class::$method();
             case 1:

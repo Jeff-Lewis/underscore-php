@@ -415,7 +415,7 @@ class ArraysTest extends UnderscoreTestCase
 
     public function testCantChainRange()
     {
-        $this->setExpectedException('Exception');
+        $this->expectException('Exception');
 
         Arrays::from($this->arrayNumbers)->range(5);
     }

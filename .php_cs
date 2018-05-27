@@ -1,10 +1,10 @@
 <?php
-use Symfony\CS\Config\Config;
-use Symfony\CS\Finder\DefaultFinder;
-use Symfony\CS\Fixer\Contrib\HeaderCommentFixer;
-use Symfony\CS\FixerInterface;
+use PhpCsFixer\Config;
+//use PhpCsFixer\Finder;
+//use PhpCsFixer\Fixer\Contrib\HeaderCommentFixer;
+use PhpCsFixer\FixerInterface;
 
-$finder = DefaultFinder::create()->in(['config', 'src', 'tests']);
+$finder = PhpCsFixer\Finder::create()->in(['config', 'src', 'tests']);
 $header = <<< EOF
 This file is part of Underscore.php
 
