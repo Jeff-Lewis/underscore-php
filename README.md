@@ -30,7 +30,7 @@ use Underscore\Types\Arrays;
 
 ## Using Underscore
 
-It can be used both as a static class, and an Object-Oriented class, so both the following are valid :
+It can be used both as a static class, and an ObjectBase-Oriented class, so both the following are valid :
 
 ```php
 $array = array(1, 2, 3);
@@ -39,7 +39,7 @@ $array = array(1, 2, 3);
 Arrays::each($array, function($value) { return $value * $value; }) // Square the array
 Function::once($myFunction) // Only allow the function to be called once
 Number::paddingLeft(5, 5) // Returns '00005'
-Object::methods($myObject) // Return the object's methods
+ObjectBase::methods($myObject) // Return the object's methods
 Strings::length('foobar') // Returns 6
 
 // Or chain calls with the 'from' method

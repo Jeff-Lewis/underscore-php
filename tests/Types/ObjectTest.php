@@ -13,7 +13,6 @@ namespace Underscore\Types;
 
 use Underscore\Dummies\DummyDefault;
 use Underscore\UnderscoreTestCase;
-use Underscore\Types\Object as ObjectBase;
 
 class ObjectTest extends UnderscoreTestCase
 {
@@ -68,7 +67,7 @@ class ObjectTest extends UnderscoreTestCase
             '__call',
         ];
 
-        $this->assertEquals($methods, Object::methods(new DummyDefault()));
+        $this->assertEquals($methods, ObjectBase::methods(new DummyDefault()));
     }
 
     public function testCanPluckColumns()

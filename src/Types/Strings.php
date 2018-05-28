@@ -15,10 +15,9 @@ use Underscore\Methods\StringsMethods;
 use Underscore\Traits\Repository;
 
 /**
- * Strings repository.
- 
+ * Strings repository. 
  *
- *@mixin StringsMethods
+ * @mixin StringsMethods
  */
 class Strings extends Repository
 {
